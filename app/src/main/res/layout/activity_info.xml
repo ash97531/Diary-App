@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="24sp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Name"
+            style="@style/info_text_field_style"/>
+
+        <EditText
+            android:id="@+id/entername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:maxLength="30"
+            android:background="@drawable/custom_input"
+            android:hint="Name"
+            style="@style/info_edit_text_field_style"
+            android:drawableLeft="@drawable/ic_create_24"
+            android:drawablePadding="4dp"/>
+
+        <TextView
+            android:id="@+id/oldpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Old Pin"
+            android:visibility="gone"
+            style="@style/info_text_field_style"/>
+
+        <EditText
+            android:id="@+id/enteroldpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Size 3-10"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            android:visibility="gone"
+            style="@style/info_edit_text_field_style"
+            android:drawableLeft="@drawable/ic_lock_24"
+            android:background="@drawable/custom_input"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Pin"
+            style="@style/info_text_field_style" />
+
+        <EditText
+            android:id="@+id/enterpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            android:hint="Size 3-10"
+            style="@style/info_edit_text_field_style"
+            android:drawableLeft="@drawable/ic_lock_24"
+            android:drawablePadding="4dp"
+            android:background="@drawable/custom_input"/>
+
+        <TextView
+            android:id="@+id/confirmpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Pin"
+            style="@style/info_text_field_style" />
+
+        <EditText
+            android:id="@+id/enterconfirmpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            android:hint="Size 3-10"
+            style="@style/info_edit_text_field_style"
+            android:drawableLeft="@drawable/ic_lock_24"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="4dp"/>
+
+        <Button
+            android:id="@+id/savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Save"
+            android:textColor="@color/purple_light"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="16dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="4dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

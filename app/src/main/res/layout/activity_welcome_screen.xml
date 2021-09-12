@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcome_image"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/nextMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/welcome_button_margin"
+        android:layout_marginLeft="@dimen/welcome_button_margin"
+        android:layout_marginTop="@dimen/welcome_button_margin"
+        android:layout_marginEnd="@dimen/welcome_button_margin"
+        android:layout_marginRight="@dimen/welcome_button_margin"
+        android:layout_marginBottom="@dimen/welcome_button_margin"
+        android:background="@drawable/custom_button"
+        android:drawablePadding="4dp"
+        android:padding="10dp"
+        android:text="CONTINUE"
+        android:textColor="@color/teal_700"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif"
+        android:text="WELCOME ..."
+        android:textAllCaps="false"
+        android:textColor="#BEFF00"
+        android:textSize="44dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
